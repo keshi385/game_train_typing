@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Typing Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="background">
+    <!-- ヒント -->
+    <p id="hint"></p>
+    <!-- メッセージ -->
+    <p id="target" class="start">ゲームを開始する</p>
+    <!-- スコア表示 -->
+    <p id="result"></p>
+    <!-- Replay -->
+    <div>
+      <button id="replay">REPLAY</button>
+    </div>
+
+    <!-- ポップアップ -->
+    <div class="popup">
+      <p id="popup">GAME<br>OVER</p>
+    </div>
+  
+    <!-- 背景 -->
+    <div class="sky"></div>
+    <div class="field"></div>
+    <div class="train">
+        <img id="train" src="img/train.png" alt="">
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/typing.js"></script>
+</body>
+</html>

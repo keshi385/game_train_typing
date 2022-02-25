@@ -1,0 +1,63 @@
+body {
+  padding-top: 40px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  background-image: url("../img/sky.png");
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+
+#popup {
+  display: none;
+  font-size: 42px;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+#hint {
+  font-size: 62px;
+  letter-spacing: .2rem;
+}
+
+#target {
+  font-size: 48px;
+  letter-spacing: .1em;
+  caret-color: transparent;
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#target:hover {
+  background-color: lightcyan;
+}
+
+#replay {
+  display: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20%;
+  color: red;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.field {
+  background-image: url("../img/field.png");
+  width: 600%;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#train {
+  width: 200px;
+  position: absolute;
+  bottom: 220px;
+  left: 120px;
+}
+/*# sourceMappingURL=styles.css.map */
