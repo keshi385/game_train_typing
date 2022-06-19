@@ -5,6 +5,7 @@ body {
   background-image: url("../img/sky.png");
   width: 100vw;
   height: 100vh;
+  margin-left: -10px;
   position: relative;
   background-size: cover;
 }
@@ -29,7 +30,9 @@ body {
   padding: 10px;
   cursor: pointer;
   &:hover {
-    background-color: lightcyan;
+    background-color: white;
+    border: 0.5px solid;
+    transition: all 0.5s;
   }
 }
 
@@ -37,16 +40,18 @@ body {
   display: none;
   padding: 10px 20px;
   font-weight: bold;
-  border-radius: 20%;
+  font-size: 24px;
+  border-radius: 5%;
   color: red;
   background-color: whitesmoke;
+  box-shadow: 6px 5px rgba($color: #000000, $alpha: 0.5);
   margin: 0 auto;
   cursor: pointer;
 }
 
 .field {
   background-image: url("../img/field.png");
-  width: 600%;
+  width: 100%;
   height: 300px;
   position: absolute;
   bottom: 0;
