@@ -3,11 +3,11 @@
 import { keySet } from './words.js';
 
 {
-  const v_msec = 50;
-  let x_org = 0;
-  let word;
-  let hintWord;
-  let loc = 0;
+  const v_msec = 50;  // タイマの計測単位[ms]
+  let x_org = 0;      // 電車の左右位置
+  let word;           // タイピング対象となる文字列
+  let hintWord;       // 日本語表記のヒント 
+  let loc = 0;        // 文字の位置
   let startTime;
   let isPlaying = false;
   let timeoutId;
@@ -33,7 +33,6 @@ import { keySet } from './words.js';
     word = row[0].q;
     hintWord = row[0].t;
     target.textContent = '_'.repeat(word.length);
-    // target.textContent = word;
     hint.textContent = hintWord;
     loc = 0;
     refleshImage(row);
@@ -90,7 +89,6 @@ import { keySet } from './words.js';
       bText = word.substring(0, loc);
       eText = word.substring(loc);
       target.textContent = bText + '_'.repeat(eText.length);
-      // target.textContent = '_'.repeat(loc) + word.substring(loc);
 
       if (loc === word.length) {
           if (keySet.length === 0) {
